@@ -2,4 +2,4 @@
 .idea
 out
 .DS_Store
-.idea/*.xml
+.idea/workspace.xml
