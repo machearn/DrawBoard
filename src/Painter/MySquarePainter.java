@@ -1,22 +1,22 @@
 package Painter;
 
-import Shapes.MyRectangle;
 import Shapes.MyShape;
+import Shapes.MySquare;
 
 import java.awt.event.MouseEvent;
 import java.awt.geom.Point2D;
 import java.util.Vector;
 
 /**
- * Created by Specific on 16/5/27.
+ * Created by Specific on 16/9/5.
  **/
-public class MyRectanglePainter extends MyPainter {
-    private MyRectangle drawingShape;
+public class MySquarePainter extends MyPainter{
+    private MySquare drawingShape;
 
     @Override
     public MyShape mousePressed(MouseEvent e) {
         points.add(e.getPoint());
-        drawingShape = new MyRectangle();
+        drawingShape = new MySquare();
         return drawingShape;
     }
 

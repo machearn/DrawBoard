@@ -11,7 +11,6 @@ import java.util.Vector;
  * Created by Specific on 16/5/27.
  **/
 public class MyPolygonPainter extends MyPainter {
-    private Vector<Point2D> points = new Vector<Point2D>();
     private MyPolygon drawingShape = null;
 
     @Override

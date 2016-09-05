@@ -11,7 +11,6 @@ import java.util.Vector;
  * Created by Specific on 16/5/29.
  **/
 public class MyLinePainter extends MyPainter {
-    private Vector<Point2D> points = new Vector<>();
     private MyLine drawingShape;
 
     @Override
