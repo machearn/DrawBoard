@@ -2,10 +2,9 @@ package Painter;
 
 import Shapes.MyShape;
 import Shapes.MySquare;
+import util.Dragger;
 
 import java.awt.event.MouseEvent;
-import java.awt.geom.Point2D;
-import java.util.Vector;
 
 /**
  * Created by Specific on 16/9/5.
@@ -27,10 +26,7 @@ public class MySquarePainter extends MyPainter{
 
     @Override
     public MyShape mouseDragged(MouseEvent e) {
-        points.add(e.getPoint());
-        drawingShape.setPoints(points);
-        drawingShape.init();
-        points.remove(1);
+        Dragger.dragged(e, points, drawingShape);
         return drawingShape;
     }
 }
